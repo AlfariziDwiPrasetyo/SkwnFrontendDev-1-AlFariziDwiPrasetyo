@@ -1,0 +1,120 @@
+.deals {
+    background-color: #FCFAFA; 
+}
+
+.deals .deals-container {
+    padding: 5rem 15rem;
+}
+
+.deals h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #2F241F;
+}
+
+.deals p {
+    margin-top: 3rem;
+    font-size: 64px;
+    font-weight: 700;
+    color: #2F241F;
+}
+
+.newsletter-signup {
+    margin-top: 5rem;
+    width: 100%;
+    max-width: 500px;
+}
+
+.email-form {
+    display: flex;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.email-form input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    color: #2F241F;
+    background-color: transparent;
+}
+
+.email-form input::placeholder {
+    color: #2F241F;
+}
+
+.email-form button {
+    border: none;
+    background-color: #D9F99D;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.email-form button:hover {
+    background-color: #c8e88b;
+}
+
+.email-form button svg {
+    width: 24px;
+    height: 24px;
+    color: #383434;
+}
+
+@media (max-width: 1024px) {
+    .deals .deals-container {
+        padding: 4rem 8rem;
+    }
+
+    .deals p {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .deals .deals-container {
+        padding: 3rem 2rem;
+        text-align: center;
+    }
+
+    .deals p {
+        font-size: 36px;
+    }
+
+    .newsletter-signup {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .email-form input {
+        padding: 0.75rem 1rem;
+        font-size: 0.95rem;
+    }
+
+    .email-form button {
+        padding: 0.75rem 1rem;
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .deals .deals-container {
+        padding: 2rem 5rem;
+    }
+
+    .deals p {
+        font-size: 28px;
+    }
+
+    .email-form input,
+    .email-form button {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.75rem;
+    }
+}   
