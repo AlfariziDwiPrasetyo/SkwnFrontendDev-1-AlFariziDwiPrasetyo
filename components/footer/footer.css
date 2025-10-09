@@ -1,0 +1,147 @@
+footer {
+    padding: 5rem 10rem;
+    display: flex;
+    color: #2F241F;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-left,
+.footer-right {
+    flex: 1; 
+    min-width: 300px;
+}
+
+.footer .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer .footer-logo p {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer .footer-logo img {
+    width: 29px;
+    height: 29px;
+}
+
+.footer-description {
+    margin-top: 25px;
+}
+
+.footer-description p {
+    font-size: 16px;
+    color: #667085;
+    max-width: 520px;
+    line-height: 1.8;
+}
+
+.footer-copyright p {
+    font-size: 16px;
+    color: #667085;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+.footer-right .footer-section {
+    flex: 1;
+    min-width: 150px; 
+}
+.footer-right .footer-section .section-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #667085;
+    padding: 20px 0;
+    list-style-type: none;
+}
+
+.title-section {
+    font-weight: 700;
+}
+
+.section-list li a {
+    color: #667085;
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    footer {
+        padding: 3rem 2rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-right {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .footer-right .footer-section {
+        min-width: 100%;
+    }
+
+    .footer-description p {
+        max-width: 100%; 
+    }
+}
+
+@media (max-width: 640px) {
+    footer {
+        gap: 2rem;
+        display: grid;
+        padding: 2rem 1rem;
+        grid-template-columns: 1fr;
+    }
+
+    .footer-left .footer-logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-left .footer-description {
+        text-align: center;
+    }
+    
+    .footer-right {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+        gap: 2rem;
+        margin-top: 25px;
+        width: 100%;
+        justify-items: center;
+    }
+
+    .footer-right .footer-section {
+        min-width: 0;
+        text-align: center;
+    }
+
+    .footer-right .footer-section:last-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+
+    .footer-right .footer-section .section-list {
+        gap: 12px;
+    }
+
+    .footer-logo p {
+        font-size: 16px;
+    }
+
+    .footer-description p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
